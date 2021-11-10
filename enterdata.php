@@ -1,5 +1,5 @@
  <?php
-$conn = mysqli_connect("localhost", "pharmacy", "velexing2%", "COSF_CAT_1");
+$conn = mysqli_connect("localhost", "pharmacy", "enterpassword", "COSF_CAT_1");
 $info = json_decode(file_get_contents("php://input")); 
 {
     $Patient_id = mysqli_real_escape_string($conn, $info->Patient_id);
